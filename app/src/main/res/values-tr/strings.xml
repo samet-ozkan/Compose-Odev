@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ComposeTasarim</string>
+
+    <string name="home">Ana Sayfa</string>
+    <string name="favorite">Favoriler</string>
+    <string name="email">E-posta</string>
+    <string name="settings">Ayarlar</string>
+
+    <string name="us_dollar">ABD Doları</string>
+    <string name="available_balance">Mevcut Bakiyeniz</string>
+    <string name="add_money">Para Yatır</string>
+
+    <string name="send">Gönder</string>
+    <string name="request">Talep Et</string>
+    <string name="bank">Banka</string>
+
+    <string name="transaction">İşlem</string>
+    <string name="spending">Harcamalar</string>
+    <string name="income">Gelir</string>
+    <string name="bills">Faturalar</string>
+    <string name="savings">Tasarruflar</string>
+    <string name="dollar_sign">-</string>
+
+    <string name="search_payments">Ödemeleri Ara</string>
+    <string name="menu_icon">Menü İkonu</string>
+    <string name="more_icon">Daha Fazla İkon</string>
+</resources>
