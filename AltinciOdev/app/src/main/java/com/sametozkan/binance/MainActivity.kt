@@ -17,6 +17,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -108,27 +110,26 @@ fun TopBar() {
         },
         title = {},
         actions = {
-            Row(verticalAlignment = Alignment.CenterVertically) {
+            Row(verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween,
+                modifier = Modifier.padding(horizontal = 10.dp).fillMaxWidth(0.3f)) {
                 Icon(
                     painter = painterResource(id = R.drawable.baseline_search_24),
                     contentDescription = "Logo",
                     modifier = Modifier
-                        .size(36.dp)
-                        .padding(horizontal = 8.dp)
+                        .size(24.dp)
                 )
                 Icon(
                     painter = painterResource(id = R.drawable.baseline_qr_code_scanner_24),
                     contentDescription = "Logo",
                     modifier = Modifier
-                        .size(36.dp)
-                        .padding(horizontal = 8.dp)
+                        .size(24.dp)
                 )
                 Icon(
                     painter = painterResource(id = R.drawable.baseline_payment_24),
                     contentDescription = "Logo",
                     modifier = Modifier
-                        .size(36.dp)
-                        .padding(horizontal = 8.dp)
+                        .size(24.dp)
                 )
 
             }
@@ -204,11 +205,11 @@ fun Content(paddingValues: PaddingValues) {
         HorizontalDivider(color = Gray, thickness = 1.dp)
         Refer2EarnSection()
         HorizontalDivider(color = Gray, thickness = 1.dp)
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(16.dp))
         Row(
             modifier = Modifier
                 .padding(horizontal = 16.dp)
-                .padding(top = 8.dp),
+                .padding(top = 5.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
@@ -293,7 +294,7 @@ fun SelectionOptions() {
                     contentPadding = PaddingValues(
                         10.dp,
                     ),
-                    modifier = Modifier.padding(end = 8.dp)
+                    modifier = Modifier.padding(end = 8.dp).wrapContentSize()
                 ) {
                     Text(
                         text = option,
@@ -370,7 +371,7 @@ fun CoinList() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp)
-                    .padding(vertical = 10.dp),
+                    .padding(vertical = 8.dp),
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
